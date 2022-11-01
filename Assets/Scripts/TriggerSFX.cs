@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class TriggerSFX : MonoBehaviour
 {
-    public AudioSource audio;
+    public AudioSource trash_audio;
 
     private void OnTriggerEnter (Collider other)
     {
-        audio.Play();
+        trash_audio.Play();
     }
 }
