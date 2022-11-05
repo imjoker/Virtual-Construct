@@ -40,12 +40,12 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 97520891b6d47de499d918c8b77a5bae,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.37
+      value: -0.51
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 97520891b6d47de499d918c8b77a5bae,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 18.03
+      value: 18.85
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 97520891b6d47de499d918c8b77a5bae,
         type: 3}
@@ -100,12 +100,12 @@ PrefabInstance:
     - target: {fileID: -1970147578922553276, guid: 97520891b6d47de499d918c8b77a5bae,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.093
+      value: 2.1
       objectReference: {fileID: 0}
     - target: {fileID: -1970147578922553276, guid: 97520891b6d47de499d918c8b77a5bae,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.85
+      value: -1.68
       objectReference: {fileID: 0}
     - target: {fileID: -1970147578922553276, guid: 97520891b6d47de499d918c8b77a5bae,
         type: 3}
@@ -134,3 +134,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 97520891b6d47de499d918c8b77a5bae, type: 3}
+--- !u!1 &5354113788702094394 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4472213565316934808, guid: 97520891b6d47de499d918c8b77a5bae,
+    type: 3}
+  m_PrefabInstance: {fileID: 8385100615469881506}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &3535333115739394217
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5354113788702094394}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 8.100538, y: 64.45336, z: 11.2315855}
+  m_Center: {x: 0.34030813, y: 29.845343, z: -22.381067}
+--- !u!65 &451172130357999125
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5354113788702094394}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.5660677, y: 64.1173, z: 10.727319}
+  m_Center: {x: -0.3141636, y: 28.994087, z: 22.436197}
