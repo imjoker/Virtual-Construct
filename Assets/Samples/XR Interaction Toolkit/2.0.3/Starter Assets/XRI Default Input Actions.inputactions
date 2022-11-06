@@ -796,6 +796,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "Right Primary",
+                    "type": "Button",
+                    "id": "ebe8aeb6-0d66-437f-86f8-5d63a85ce661",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -974,6 +983,17 @@
                     "action": "Translate Anchor",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "acbe2ac6-be3b-4ba1-a81a-6f0abd02b4d1",
+                    "path": "<XRController>{RightHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Right Primary",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
