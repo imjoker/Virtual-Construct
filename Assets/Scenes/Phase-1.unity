@@ -1821,13 +1821,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1880849016}
-  m_LocalRotation: {x: 0.0033693626, y: 0.27532735, z: -0.006191616, w: 0.96132475}
+  m_LocalRotation: {x: 0.006769726, y: -0.48908424, z: -0.001964565, w: 0.8722081}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.24999997, y: 0.25, z: 0.24999997}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 855343529}
-  m_RootOrder: 3
+  m_Father: {fileID: 4335160861896190456}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0.567, y: 31.961, z: -0.576}
 --- !u!82 &1880849018
 AudioSource:
@@ -1850,7 +1850,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 275
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -1885,7 +1885,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 0.509
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -1900,7 +1900,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -2198,6 +2198,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 385411478, guid: dde4f5333342729408eae55ac93946b1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 385411478, guid: dde4f5333342729408eae55ac93946b1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 385411478, guid: dde4f5333342729408eae55ac93946b1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 385411478, guid: dde4f5333342729408eae55ac93946b1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 385411478, guid: dde4f5333342729408eae55ac93946b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 385411482, guid: dde4f5333342729408eae55ac93946b1, type: 3}
       propertyPath: m_MoveSpeed
       value: 0.5
@@ -2313,6 +2333,8 @@ MonoBehaviour:
       type: 3}
   computer: {fileID: 855343529}
   player: {fileID: 4335160861896190456}
+  computerAudio: {fileID: 1880849018}
+  endClip: {fileID: 8300000, guid: f560f154877caf84bad1a079630d1078, type: 3}
 --- !u!4 &4335160861896190456 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4335160861725605685, guid: dde4f5333342729408eae55ac93946b1,

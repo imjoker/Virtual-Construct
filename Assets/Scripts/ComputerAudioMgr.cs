@@ -20,6 +20,7 @@ public class ComputerAudioMgr : MonoBehaviour
     void Start()
     {
         computerAudio = GetComponent<AudioSource>();
+        computerAudio.clip = startClip;
         computerAudio.Play();
         prevPos = player.position;
     }
@@ -29,26 +30,27 @@ public class ComputerAudioMgr : MonoBehaviour
     {
         timer += Time.deltaTime;
 
-        if (timer > 3)
+        if (timer > 3.0f)
         {
             timer = 0.0f;
-
-            if (((player.position.z - prevPos.z) / timer) < minSpeed)
-            {
-                computerAudio.clip = encourageAudioClips[Random.Range(0, encourageAudioClips.Length)];
-                computerAudio.Play();
-            }
-            
             prevPos = player.position;
+
+            if (!computerAudio.isPlaying)
+            {
+                if (((player.position.z - prevPos.z) / timer) < minSpeed)
+                {
+                    computerAudio.clip = encourageAudioClips[Random.Range(0, encourageAudioClips.Length)];
+                    computerAudio.Play();
+                }                               
+            }
         }
 
-        if (player.position.z > mannequins[0].position.z)
+        if (player.position.z > mannequins[currMannequinNdx].position.z)
         {
             computerAudio.clip = congratsAudioClips[Random.Range(0, congratsAudioClips.Length)];
             computerAudio.Play();
             ++currMannequinNdx;
         }
-
 
     }
 }

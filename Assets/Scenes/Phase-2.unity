@@ -2497,12 +2497,12 @@ PrefabInstance:
     - target: {fileID: 4335160861725605685, guid: dde4f5333342729408eae55ac93946b1,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -49.399
+      value: 14.081
       objectReference: {fileID: 0}
     - target: {fileID: 4335160861725605685, guid: dde4f5333342729408eae55ac93946b1,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4335160861725605685, guid: dde4f5333342729408eae55ac93946b1,
         type: 3}
@@ -2512,7 +2512,7 @@ PrefabInstance:
     - target: {fileID: 4335160861725605685, guid: dde4f5333342729408eae55ac93946b1,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4335160861725605685, guid: dde4f5333342729408eae55ac93946b1,
         type: 3}
@@ -2527,7 +2527,7 @@ PrefabInstance:
     - target: {fileID: 4335160861725605685, guid: dde4f5333342729408eae55ac93946b1,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 4335160861725605685, guid: dde4f5333342729408eae55ac93946b1,
         type: 3}
@@ -2581,6 +2581,8 @@ MonoBehaviour:
       type: 3}
   computer: {fileID: 855343529}
   player: {fileID: 4335160861896190456}
+  computerAudio: {fileID: 0}
+  endClip: {fileID: 0}
 --- !u!4 &4335160861896190456 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4335160861725605685, guid: dde4f5333342729408eae55ac93946b1,
