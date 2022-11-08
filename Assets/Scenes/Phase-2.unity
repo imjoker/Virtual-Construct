@@ -2481,11 +2481,23 @@ PrefabInstance:
       propertyPath: m_MoveSpeed
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 4335160860906898768, guid: dde4f5333342729408eae55ac93946b1,
+        type: 3}
+      propertyPath: m_ModelPrefab
+      value: 
+      objectReference: {fileID: 2158880286334194178, guid: 86a6aec7bcd19754ba6346774d8f041b,
+        type: 3}
     - target: {fileID: 4335160860906898769, guid: dde4f5333342729408eae55ac93946b1,
         type: 3}
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 1112789259}
+    - target: {fileID: 4335160861523658385, guid: dde4f5333342729408eae55ac93946b1,
+        type: 3}
+      propertyPath: m_ModelPrefab
+      value: 
+      objectReference: {fileID: 2158880286334194178, guid: 86a6aec7bcd19754ba6346774d8f041b,
+        type: 3}
     - target: {fileID: 4335160861523658390, guid: dde4f5333342729408eae55ac93946b1,
         type: 3}
       propertyPath: m_InteractionManager
