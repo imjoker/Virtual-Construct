@@ -10,16 +10,35 @@ public class InputActionMgr : MonoBehaviour
     public  InputActionProperty startGame;
     public  Transform           computer;
     public  Transform           player;
-    private bool                isPressedOnce = false;
-
+    public AudioSource          computerAudio;
+    public AudioClip            endClip;
+    private float               timer = 3.0f;
 
     // Update is called once per frame
-    void FixedUpdate ()
+    void Update ()
     {
-        if (!isPressedOnce && startGame.action.IsPressed() && ((computer.position.z - player.position.z) < 1))
-        {           
-            SceneManager.LoadScene("Phase-2");
-            isPressedOnce = true;
+        if ((computer.position.z - player.position.z) < 3)
+        {
+            if (startGame.action.IsPressed())
+            {
+                player.rotation = Quaternion.Euler(0, 180, 0);
+
+                SceneManager.LoadScene("Phase-2");
+            } else {
+
+                computerAudio.clip = endClip;
+
+                if (!computerAudio.isPlaying)
+                {
+                    timer += Time.deltaTime;
+
+                    if (timer > 3f)
+                    {
+                        computerAudio.Play();
+                        timer = 0.0f;
+                    }
+                }
+            }
         }
     }
 }
