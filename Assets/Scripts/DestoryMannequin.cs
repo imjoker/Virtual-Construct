@@ -18,21 +18,28 @@ public class DestoryMannequin : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-                float x;
-                float y;
-                float z;
-
-            x = this.gameObject.transform.position.x;
-            y = this.gameObject.transform.position.y;
-            z = this.gameObject.transform.position.z;
-
             --health;
 
-            if (health == 0)
+            if (health == 0) {
+
+                Vector3 position = this.gameObject.transform.position;
+
+                position.x += 0.02f;
+                position.y += 4.27f;
+                position.z -= 0.02f;
+
                 Destroy(this.gameObject);
-            else
+
+                block.transform.position = position;
+
+                Instantiate(block);
+
+            } else
+            {
+                Debug.Log("hit");
+
                 this.gameObject.transform.localScale -= sub;
-                            
+            }
         }
     }
 

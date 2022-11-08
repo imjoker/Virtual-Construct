@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8788817994265954998}
   m_Layer: 0
   m_Name: left boxing glove
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1079385023583576666}
   m_LocalRotation: {x: 0.49327657, y: 0.52254575, z: 0.4946589, w: 0.4888116}
-  m_LocalPosition: {x: -1.861, y: 1.614, z: -6.511}
+  m_LocalPosition: {x: 0, y: 0, z: -0.5}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -63,7 +63,7 @@ CapsuleCollider:
   m_Radius: 1.8464049
   m_Height: 5.874658
   m_Direction: 1
-  m_Center: {x: 8.999996, y: -10.312684, z: -0.6650821}
+  m_Center: {x: -0.4024231, y: 4.1, z: -1.381855}
 --- !u!1 &6872764319209267324
 GameObject:
   m_ObjectHideFlags: 0
