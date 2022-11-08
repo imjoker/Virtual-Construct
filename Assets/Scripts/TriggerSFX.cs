@@ -8,6 +8,8 @@ public class TriggerSFX : MonoBehaviour
 
     private void OnTriggerEnter (Collider other)
     {
+        Debug.Log(other.gameObject.name);
+
         if (!trash_audio.isPlaying)
             trash_audio.Play();
     }

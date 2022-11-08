@@ -6,6 +6,8 @@ public class DestoryMannequin : MonoBehaviour
 {
 
     public GameObject block;
+    public int        health = 5;
+    public Vector3    sub    = new Vector3(0.1f, 0.1f, 0.1f);
 
     // Start is called before the first frame update
     void Start()
@@ -24,9 +26,13 @@ public class DestoryMannequin : MonoBehaviour
             y = this.gameObject.transform.position.y;
             z = this.gameObject.transform.position.z;
 
-            Destroy(this.gameObject);
+            --health;
 
-
+            if (health == 0)
+                Destroy(this.gameObject);
+            else
+                this.gameObject.transform.localScale -= sub;
+                            
         }
     }
 
