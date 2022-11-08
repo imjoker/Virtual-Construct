@@ -37,20 +37,26 @@ public class ComputerAudioMgr : MonoBehaviour
 
             if (!computerAudio.isPlaying)
             {
+                Debug.Log("Audio not playing yet!");
+
                 if (((player.position.z - prevPos.z) / timer) < minSpeed)
                 {
+                    Debug.Log("player not fast enoguh");
+
                     computerAudio.clip = encourageAudioClips[Random.Range(0, encourageAudioClips.Length)];
                     computerAudio.Play();
                 }                               
             }
         }
+    }
 
-        if (player.position.z > mannequins[currMannequinNdx].position.z)
-        {
-            computerAudio.clip = congratsAudioClips[Random.Range(0, congratsAudioClips.Length)];
-            computerAudio.Play();
-            ++currMannequinNdx;
-        }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (currMannequinNdx == 3)
+            return;
 
+        computerAudio.clip = congratsAudioClips[Random.Range(0, congratsAudioClips.Length)];
+        computerAudio.Play();
+        ++currMannequinNdx;
     }
 }
