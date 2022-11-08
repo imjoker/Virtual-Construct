@@ -5,15 +5,15 @@ using UnityEngine;
 public class FlickerLight : MonoBehaviour
 {
 
-    Light light;
+    Light flick_light;
 
     float minSpeed = 0.1f;
     float maxSpeed = 0.5f;
     float minIntensity = 0.01f;
-    float maxIntensity = 0.2f;
+    float maxIntensity = 15f;
     void Start()
     {
-        light = GetComponent<Light>();
+        flick_light = GetComponent<Light>();
         StartCoroutine(run());
     }
 
@@ -27,10 +27,10 @@ public class FlickerLight : MonoBehaviour
     {
         while (true)
         {
-            light.enabled = true;
-            light.intensity = Random.Range(minIntensity, maxIntensity);
+            flick_light.enabled = true;
+            flick_light.intensity = Random.Range(minIntensity, maxIntensity);
             yield return new WaitForSeconds(Random.Range(minSpeed,maxSpeed)) ;
-            light.enabled = false;
+            flick_light.enabled = false;
             yield return new WaitForSeconds(Random.Range(minSpeed, maxSpeed));
         }
     }
