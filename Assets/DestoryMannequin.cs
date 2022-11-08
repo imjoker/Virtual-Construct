@@ -11,9 +11,9 @@ public class DestoryMannequin : MonoBehaviour
         mannequin = GetComponent<GameObject>();
     }
 
-    private void OnControllerColliderHit(ControllerColliderHit hit)
+    private void OnCollisionEnter(Collision collision)
     {
-        Destroy(mannequin);
+        Debug.Log(collision.gameObject.name);
     }
 
     // Update is called once per frame
