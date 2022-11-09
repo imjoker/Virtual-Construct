@@ -10,7 +10,7 @@ public class FlickerLight : MonoBehaviour
     float minSpeed = 0.1f;
     float maxSpeed = 0.5f;
     float minIntensity = 0.01f;
-    float maxIntensity = 15f;
+    float maxIntensity = 10f;
     void Start()
     {
         flick_light = GetComponent<Light>();
