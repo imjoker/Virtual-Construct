@@ -8,6 +8,8 @@ public class DestoryMannequin : MonoBehaviour
     public GameObject block;
     public int        health = 5;
     public Vector3    sub    = new Vector3(0.1f, 0.1f, 0.1f);
+    public AudioSource audio_source;
+    public AudioClip   audio_clip;
 
     // Start is called before the first frame update
     void Start()
@@ -33,6 +35,9 @@ public class DestoryMannequin : MonoBehaviour
                 block.transform.position = position;
 
                 Instantiate(block);
+
+                audio_source.clip = audio_clip;
+                audio_source.Play();
 
             } else
             {
