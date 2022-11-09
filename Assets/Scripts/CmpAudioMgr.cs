@@ -2,19 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ComputerAudioMgr : MonoBehaviour
+public class CmpAudioMgr : MonoBehaviour
 {
 
-    public Transform    player;
-    private AudioSource  computerAudio;
-    public AudioClip    startClip;
-    public AudioClip[]  encourageAudioClips;
-    public AudioClip[]  congratsAudioClips;
-    public Transform[]  mannequins;
-    private int         currMannequinNdx = 0;
-    private float       timer = 0.0f;
-    private Vector3     prevPos;
-    public  float       minSpeed = 1.0f;
+    public Transform player;
+    private AudioSource computerAudio;
+    public AudioClip startClip;
+    public AudioClip[] encourageAudioClips;
+    private float timer = 0.0f;
+    private Vector3 prevPos;
+    public float minSpeed = 1.0f;
 
     // Start is called before the first frame update
     void Start()
@@ -45,18 +42,8 @@ public class ComputerAudioMgr : MonoBehaviour
 
                     computerAudio.clip = encourageAudioClips[Random.Range(0, encourageAudioClips.Length)];
                     computerAudio.Play();
-                }                               
+                }
             }
         }
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (currMannequinNdx == 3)
-            return;
-
-        computerAudio.clip = congratsAudioClips[Random.Range(0, congratsAudioClips.Length)];
-        computerAudio.Play();
-        ++currMannequinNdx;
     }
 }
