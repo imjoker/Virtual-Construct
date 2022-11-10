@@ -1,15 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DestoryMannequin : MonoBehaviour
 {
 
     public GameObject block;
-    public int        health = 5;
-    public Vector3    sub    = new Vector3(0.1f, 0.1f, 0.1f);
+    public int        health = 2;
+    public Vector3    sub    = new Vector3(0.05f, 0.05f, 0.05f);
     public AudioSource audio_source;
     public AudioClip   audio_clip;
+    public AudioClip   hit_clip;
+    public Image       activate_img;
 
     // Start is called before the first frame update
     void Start()
@@ -34,6 +37,8 @@ public class DestoryMannequin : MonoBehaviour
 
                 block.transform.position = position;
 
+                activate_img.gameObject.SetActive(false);
+
                 Instantiate(block);
 
                 audio_source.clip = audio_clip;
@@ -42,6 +47,9 @@ public class DestoryMannequin : MonoBehaviour
             } else
             {
                 Debug.Log("hit");
+
+                audio_source.clip = hit_clip;
+                audio_source.Play();
 
                 this.gameObject.transform.localScale -= sub;
             }
