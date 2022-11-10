@@ -7,8 +7,8 @@ public class DestoryMannequin : MonoBehaviour
 {
 
     public GameObject block;
-    public int        health = 2;
-    public Vector3    sub    = new Vector3(0.05f, 0.05f, 0.05f);
+    public int        health = 3;
+    public Vector3    sub    = new Vector3(0.03f, 0.03f, 0.03f);
     public AudioSource audio_source;
     public AudioClip   audio_clip;
     public AudioClip   hit_clip;

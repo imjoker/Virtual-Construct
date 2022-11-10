@@ -9,9 +9,16 @@ public class TriggerCongrats : MonoBehaviour
 
     private void OnTriggerEnter (Collider other)
     {
+
+        if (congo_audio.isPlaying)
+        {
+            congo_audio.GetComponent<CmpAudioMgr>().timer = 0.0f;
+            return;
+        }
+
         if (!congo_audio.isPlaying)
         {
-            if (congo_audio.GetComponent<CmpAudioMgr>().timer > 7f)
+            if (congo_audio.GetComponent<CmpAudioMgr>().timer > 15f)
             {
                 congo_audio.clip = congo_clip;
                 congo_audio.Play();
