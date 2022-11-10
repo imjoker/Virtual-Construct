@@ -9,9 +9,10 @@ public class CmpAudioMgr : MonoBehaviour
     private AudioSource computerAudio;
     public AudioClip startClip;
     public AudioClip[] encourageAudioClips;
-    private float timer = 0.0f;
+    public float timer = 0.0f;
     private Vector3 prevPos;
-    public float minSpeed = 1.0f;
+    public float minSpeed = 0.01f;
+    private int audioNdx = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -27,23 +28,33 @@ public class CmpAudioMgr : MonoBehaviour
     {
         timer += Time.deltaTime;
 
-        if (timer > 3.0f)
+        if (timer > 13f)
         {
-            timer = 0.0f;
             prevPos = player.position;
 
             if (!computerAudio.isPlaying)
             {
                 Debug.Log("Audio not playing yet!");
 
+                Debug.Log(player.position.z);
+                Debug.Log(prevPos.z);
+                Debug.Log((player.position.z - prevPos.z) / timer);
+
                 if (((player.position.z - prevPos.z) / timer) < minSpeed)
                 {
                     Debug.Log("player not fast enoguh");
 
-                    computerAudio.clip = encourageAudioClips[Random.Range(0, encourageAudioClips.Length)];
+                    computerAudio.clip = encourageAudioClips[audioNdx];
                     computerAudio.Play();
+
+                    ++audioNdx;
+
+                    if (audioNdx == encourageAudioClips.Length)
+                        audioNdx = 0;
                 }
             }
+
+            timer = 0.0f;
         }
     }
 }

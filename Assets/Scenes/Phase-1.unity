@@ -467,6 +467,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PC_Trigger_2
       objectReference: {fileID: 0}
+    - target: {fileID: 1688518560175512367, guid: 50f4c0c6b549ba34b854e912321c22f0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1688518560175512352, guid: 50f4c0c6b549ba34b854e912321c22f0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 50f4c0c6b549ba34b854e912321c22f0, type: 3}
@@ -2834,7 +2839,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   congo_audio: {fileID: 1880849018}
-  congo_clip: {fileID: 8300000, guid: 62912337b287be74ca6f046c3ab2bced, type: 3}
+  congo_clip: {fileID: 8300000, guid: ac8acfda7fc89d84cba65239fdeef562, type: 3}
 --- !u!1001 &3506150343215370
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3110,6 +3115,27 @@ PrefabInstance:
       propertyPath: m_Name
       value: XR Origin
       objectReference: {fileID: 0}
+    - target: {fileID: 4820627109647164846, guid: d27b1ab6c6263c5419f057f9e1ad66f7,
+        type: 3}
+      propertyPath: encourageAudioClips.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: b4919012808f7b44582357523fa37e92, type: 3}
+    - target: {fileID: 4820627109647164846, guid: d27b1ab6c6263c5419f057f9e1ad66f7,
+        type: 3}
+      propertyPath: encourageAudioClips.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 3f2295603e5379844931ee9bae8ff2d0, type: 3}
+    - target: {fileID: 4820627109682615570, guid: d27b1ab6c6263c5419f057f9e1ad66f7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820627109682615580, guid: d27b1ab6c6263c5419f057f9e1ad66f7,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 19afcd6f503b54d489558270b27e3dd4,
+        type: 3}
     - target: {fileID: 4820627110081900726, guid: d27b1ab6c6263c5419f057f9e1ad66f7,
         type: 3}
       propertyPath: m_InteractionManager

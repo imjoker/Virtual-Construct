@@ -30,7 +30,7 @@ public class DestoryMannequin : MonoBehaviour
                 Vector3 position = this.gameObject.transform.position;
 
                 position.x += 0.02f;
-                position.y += 4.27f;
+                position.y += 3.0f;
                 position.z -= 0.02f;
 
                 Destroy(this.gameObject);
