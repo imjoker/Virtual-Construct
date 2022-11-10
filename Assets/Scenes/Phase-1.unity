@@ -3018,6 +3018,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3399856335094466967, guid: 88dfbf13d8d3805478896b6f4918e31c,
         type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: b06efe55bd62b8046b02a6fb8ebd26c2, type: 3}
+    - target: {fileID: 3399856335094466967, guid: 88dfbf13d8d3805478896b6f4918e31c,
+        type: 3}
       propertyPath: spreadCustomCurve.m_Curve.Array.data[0].value
       value: 0.8527778
       objectReference: {fileID: 0}
@@ -3164,6 +3169,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 69dd436c04d32e1459e26e6ad7bcf84a,
         type: 3}
+    - target: {fileID: 9137762985094673954, guid: d27b1ab6c6263c5419f057f9e1ad66f7,
+        type: 3}
+      propertyPath: endClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4e48640035737b448802190b5e2d7d41, type: 3}
     - target: {fileID: 9137762985094673954, guid: d27b1ab6c6263c5419f057f9e1ad66f7,
         type: 3}
       propertyPath: computer
