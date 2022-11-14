@@ -2036,6 +2036,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPC04
       objectReference: {fileID: 0}
+    - target: {fileID: 3399856335094466967, guid: 88dfbf13d8d3805478896b6f4918e31c,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: b06efe55bd62b8046b02a6fb8ebd26c2, type: 3}
     - target: {fileID: 8996332307546381630, guid: 88dfbf13d8d3805478896b6f4918e31c,
         type: 3}
       propertyPath: m_UseGravity
