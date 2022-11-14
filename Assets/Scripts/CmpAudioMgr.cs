@@ -28,7 +28,13 @@ public class CmpAudioMgr : MonoBehaviour
     {
         timer += Time.deltaTime;
 
-        if (timer > 13f)
+        if (computerAudio.isPlaying)
+        {
+            timer = 0.0f;
+            return;
+        }
+
+        if (timer > 15f)
         {
             prevPos = player.position;
 
